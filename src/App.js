@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Link } from 'react-router-dom';
+import Navigation from "./components/Navbar";
+import Carousel from './components/Carousel';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+      <>
+      <Navigation />
+      <div className="App">
+        <Route exact path='/' component={Header}/>
+        <Route exact path='/'className='carousel' component={Carousel} />
+        <Route exact path='/contact' component={Contact} />
+      </div>
+      <Footer />
+      </>
+    );
+  }
 
-export default App;
+  export default App;
