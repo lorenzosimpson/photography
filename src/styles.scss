@@ -1,10 +1,12 @@
 body {
   font-family: 'Helvetica Neue';
   box-sizing: border-box;
+
   .App {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
+  min-height: 85vh;
 
 
   .jumbotron {

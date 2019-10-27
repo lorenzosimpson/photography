@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Navigation from "./components/Navbar";
 import Carousel from './components/Carousel';
 import Header from './components/Header';
