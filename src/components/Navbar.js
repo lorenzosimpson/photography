@@ -18,9 +18,11 @@ const Navigation = props => {
   return (
     <div>
       <Navbar className='nav' color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
+        <Link to='/'>
+        <NavbarBrand className="mr-auto">
           lorenzo simpson
         </NavbarBrand>
+        </Link>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
